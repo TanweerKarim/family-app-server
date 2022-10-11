@@ -6,8 +6,8 @@ const {RtcTokenBuilder, RtcRole, RtmTokenBuilder, RtmRole} = require('agora-acce
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8080;
-const APP_ID = process.env.APP_ID;
-const APP_CERTIFICATE = process.env.APP_CERTIFICATE;
+const APP_ID = "31d1509ae84041a3aea294bdc107ce45";
+const APP_CERTIFICATE = "1a798160dfd841e394aabad2d87710f2";
 
 const nocache = (_, resp, next) => {
   resp.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
